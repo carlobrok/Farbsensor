@@ -59,17 +59,6 @@ F 3 "~" H 3400 1900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L Device:R R2
-U 1 1 5D5FA0B1
-P 4300 1950
-F 0 "R2" H 4370 1996 50  0000 L CNN
-F 1 "147" H 4370 1905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 1950 50  0001 C CNN
-F 3 "~" H 4300 1950 50  0001 C CNN
-	1    4300 1950
-	1    0    0    -1  
-$EndComp
-$Comp
 L Device:R R3
 U 1 1 5D5FA390
 P 4550 1950
@@ -78,17 +67,6 @@ F 1 "100" H 4620 1905 50  0000 L CNN
 F 2 "Resistor_SMD:R_0603_1608Metric" V 4480 1950 50  0001 C CNN
 F 3 "~" H 4550 1950 50  0001 C CNN
 	1    4550 1950
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R4
-U 1 1 5D5FA600
-P 4800 1950
-F 0 "R4" H 4870 1996 50  0000 L CNN
-F 1 "100" H 4870 1905 50  0000 L CNN
-F 2 "Resistor_SMD:R_0603_1608Metric" V 4730 1950 50  0001 C CNN
-F 3 "~" H 4800 1950 50  0001 C CNN
-	1    4800 1950
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
@@ -178,29 +156,17 @@ F 3 "" H 4750 2900 50  0001 C CNN
 	1    0    0    -1  
 $EndComp
 Wire Wire Line
-	4300 1800 4300 1650
-Wire Wire Line
 	4550 1650 4550 1800
-Wire Wire Line
-	4800 1650 4800 1800
 Wire Wire Line
 	7300 2250 7200 2250
 Wire Wire Line
 	7300 2150 7200 2150
 Wire Wire Line
 	7300 2050 7200 2050
-Text Label 4300 1650 1    50   ~ 0
-LED_B
 Text Label 4550 1650 1    50   ~ 0
 LED_G
-Text Label 4800 1650 1    50   ~ 0
-LED_R
-Text Label 7300 2050 0    50   ~ 0
-LED_B
 Text Label 7300 2150 0    50   ~ 0
 LED_G
-Text Label 7300 2250 0    50   ~ 0
-LED_R
 Text Label 3600 2200 0    50   ~ 0
 SEN
 $Comp
@@ -266,4 +232,44 @@ F 3 "~" H 2250 2300 50  0001 C CNN
 	1    2250 2300
 	1    0    0    -1  
 $EndComp
+Text Label 4800 1650 1    50   ~ 0
+LED_R
+Wire Wire Line
+	4800 1650 4800 1800
+$Comp
+L Device:R R4
+U 1 1 5D5FA600
+P 4800 1950
+F 0 "R4" H 4870 1996 50  0000 L CNN
+F 1 "100" H 4870 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4730 1950 50  0001 C CNN
+F 3 "~" H 4800 1950 50  0001 C CNN
+	1    4800 1950
+	1    0    0    -1  
+$EndComp
+Text Label 4300 1650 1    50   ~ 0
+LED_B
+Wire Wire Line
+	4300 1800 4300 1650
+$Comp
+L Device:R R2
+U 1 1 5D5FA0B1
+P 4300 1950
+F 0 "R2" H 4370 1996 50  0000 L CNN
+F 1 "147" H 4370 1905 50  0000 L CNN
+F 2 "Resistor_SMD:R_0603_1608Metric" V 4230 1950 50  0001 C CNN
+F 3 "~" H 4300 1950 50  0001 C CNN
+	1    4300 1950
+	1    0    0    -1  
+$EndComp
+Text Label 7300 2050 0    50   ~ 0
+LED_R
+Text Label 7300 2250 0    50   ~ 0
+LED_B
+Text Label 4300 2200 1    50   ~ 0
+B
+Text Label 4550 2200 1    50   ~ 0
+G
+Text Label 4800 2200 1    50   ~ 0
+R
 $EndSCHEMATC
