@@ -2,6 +2,8 @@
 
 Analoger RGB Farbsensor entwickelt für den Robo-Cup Rescue Line.
 
+Library für den Sensor: https://github.com/carlobrok/Sensorleiste
+
 
 ### Eigenschaften
 
